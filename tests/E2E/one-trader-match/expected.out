@@ -1,0 +1,60 @@
+[SPX] Starting
+[SPX] Trading 2 products: MANGO MILK
+[SPX] Created FIFO /tmp/spx_exchange_0
+[SPX] Created FIFO /tmp/spx_trader_0
+[SPX] Connected to /tmp/spx_exchange_0
+[SPX] Connected to /tmp/spx_trader_0
+[SPX] [T0] Parsing command: <SELL 0 MANGO 10 10>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: MANGO; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 10 @ $10 (1 order)
+[SPX]	Product: MILK; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: MANGO 0 ($0), MILK 0 ($0)
+[SPX] [T0] Parsing command: <BUY 1 MANGO 10 10>
+[SPX] Match: Order 0 [T0], New Order 1 [T0], value: $100, fee: $1.
+[SPX]	--ORDERBOOK--
+[SPX]	Product: MANGO; Buy levels: 0; Sell levels: 0
+[SPX]	Product: MILK; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: MANGO 0 ($-1), MILK 0 ($0)
+[SPX] [T0] Parsing command: <BUY 2 MILK 100 10>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: MANGO; Buy levels: 0; Sell levels: 0
+[SPX]	Product: MILK; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 100 @ $10 (1 order)
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: MANGO 0 ($-1), MILK 0 ($0)
+[SPX] [T0] Parsing command: <SELL 3 MILK 100 8>
+[SPX] Match: Order 2 [T0], New Order 3 [T0], value: $1000, fee: $10.
+[SPX]	--ORDERBOOK--
+[SPX]	Product: MANGO; Buy levels: 0; Sell levels: 0
+[SPX]	Product: MILK; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: MANGO 0 ($-1), MILK 0 ($-10)
+[SPX] [T0] Parsing command: <SELL 4 MANGO 100 10>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: MANGO; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 100 @ $10 (1 order)
+[SPX]	Product: MILK; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: MANGO 0 ($-1), MILK 0 ($-10)
+[SPX] [T0] Parsing command: <BUY 5 MANGO 10 10>
+[SPX] Match: Order 4 [T0], New Order 5 [T0], value: $100, fee: $1.
+[SPX]	--ORDERBOOK--
+[SPX]	Product: MANGO; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 90 @ $10 (1 order)
+[SPX]	Product: MILK; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: MANGO 0 ($-2), MILK 0 ($-10)
+[SPX] [T0] Parsing command: <BUY 6 MANGO 100 10>
+[SPX] Match: Order 4 [T0], New Order 6 [T0], value: $900, fee: $9.
+[SPX]	--ORDERBOOK--
+[SPX]	Product: MANGO; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 10 @ $10 (1 order)
+[SPX]	Product: MILK; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: MANGO 0 ($-11), MILK 0 ($-10)
+[SPX] Trader 0 disconnected
+[SPX] Trading completed
+[SPX] Exchange fees collected: $21

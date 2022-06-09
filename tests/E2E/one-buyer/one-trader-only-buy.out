@@ -1,0 +1,44 @@
+[SPX] Starting
+[SPX] Trading 1 products: WATER
+[SPX] Created FIFO /tmp/spx_exchange_0
+[SPX] Created FIFO /tmp/spx_trader_0
+[SPX] Connected to /tmp/spx_exchange_0
+[SPX] Connected to /tmp/spx_trader_0
+[SPX] [T0] Parsing command: <BUY 1000000 WATER 10 10>
+[SPX] [T0] Parsing command: <BUY -1 WATER 10 10>
+[SPX] [T0] Parsing command: <BUY 0 CHEESE CHEESE CHEESE CHEESE 10 10>
+[SPX] [T0] Parsing command: <BUY 0 waTER 10 10>
+[SPX] [T0] Parsing command: <BUY 0 WATERMELON 10 10>
+[SPX] [T0] Parsing command: <BUY 0 WATER  10 10>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: WATER; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 10 @ $10 (1 order)
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: WATER 0 ($0)
+[SPX] [T0] Parsing command: <BUY 0 WATER -1 10>
+[SPX] [T0] Parsing command: <BUY 0 WATER 0 10>
+[SPX] [T0] Parsing command: <BUY 0 WATER 1000000 10>
+[SPX] [T0] Parsing command: <BUY 0 WATER 10 -1>
+[SPX] [T0] Parsing command: <BUY 0 WATER 10 0>
+[SPX] [T0] Parsing command: <BUY 0 WATER 10 1000000>
+[SPX] [T0] Parsing command: <BUY 0 WATER 10 10>
+[SPX] [T0] Parsing command: <BUY 2 WATER 29 14>
+[SPX] [T0] Parsing command: <BUY 1 WATER 20 15>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: WATER; Buy levels: 2; Sell levels: 0
+[SPX]		BUY 20 @ $15 (1 order)
+[SPX]		BUY 10 @ $10 (1 order)
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: WATER 0 ($0)
+[SPX] [T0] Parsing command: <BUY 1 WATER 20 15>
+[SPX] [T0] Parsing command: <BUY 2 WATER 100 12>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: WATER; Buy levels: 3; Sell levels: 0
+[SPX]		BUY 20 @ $15 (1 order)
+[SPX]		BUY 100 @ $12 (1 order)
+[SPX]		BUY 10 @ $10 (1 order)
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: WATER 0 ($0)
+[SPX] Trader 0 disconnected
+[SPX] Trading completed
+[SPX] Exchange fees collected: $0

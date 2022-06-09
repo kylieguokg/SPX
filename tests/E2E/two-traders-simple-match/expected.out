@@ -1,0 +1,65 @@
+[SPX] Starting
+[SPX] Trading 1 products: WATER
+[SPX] Created FIFO /tmp/spx_exchange_0
+[SPX] Created FIFO /tmp/spx_trader_0
+[SPX] Connected to /tmp/spx_exchange_0
+[SPX] Connected to /tmp/spx_trader_0
+[SPX] Created FIFO /tmp/spx_exchange_1
+[SPX] Created FIFO /tmp/spx_trader_1
+[SPX] Connected to /tmp/spx_exchange_1
+[SPX] Connected to /tmp/spx_trader_1
+[SPX] [T0] Parsing command: <BUY 0 WATER 10 10>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: WATER; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 10 @ $10 (1 order)
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: WATER 0 ($0)
+[SPX]	Trader 1: WATER 0 ($0)
+[SPX] [T1] Parsing command: <SELL 0 WATER 10 10>
+[SPX] Match: Order 0 [T0], New Order 0 [T1], value: $100, fee: $1.
+[SPX]	--ORDERBOOK--
+[SPX]	Product: WATER; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: WATER 10 ($-100)
+[SPX]	Trader 1: WATER -10 ($99)
+[SPX] [T0] Parsing command: <BUY 1 WATER 10 100>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: WATER; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 10 @ $100 (1 order)
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: WATER 10 ($-100)
+[SPX]	Trader 1: WATER -10 ($99)
+[SPX] [T1] Parsing command: <SELL 1 WATER 10 90>
+[SPX] Match: Order 1 [T0], New Order 1 [T1], value: $1000, fee: $10.
+[SPX]	--ORDERBOOK--
+[SPX]	Product: WATER; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: WATER 20 ($-1100)
+[SPX]	Trader 1: WATER -20 ($1089)
+[SPX] [T0] Parsing command: <SELL 2 WATER 1 10>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: WATER; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 1 @ $10 (1 order)
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: WATER 20 ($-1100)
+[SPX]	Trader 1: WATER -20 ($1089)
+[SPX] [T1] Parsing command: <BUY 2 WATER 29 10>
+[SPX] Match: Order 2 [T0], New Order 2 [T1], value: $10, fee: $0.
+[SPX]	--ORDERBOOK--
+[SPX]	Product: WATER; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 28 @ $10 (1 order)
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: WATER 19 ($-1090)
+[SPX]	Trader 1: WATER -19 ($1079)
+[SPX] [T1] Parsing command: <SELL 3 WATER 100 1000>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: WATER; Buy levels: 1; Sell levels: 1
+[SPX]		SELL 100 @ $1000 (1 order)
+[SPX]		BUY 28 @ $10 (1 order)
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: WATER 19 ($-1090)
+[SPX]	Trader 1: WATER -19 ($1079)
+[SPX] Trader 1 disconnected
+[SPX] Trader 0 disconnected
+[SPX] Trading completed
+[SPX] Exchange fees collected: $11
